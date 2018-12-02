@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+$ rails s -b 127.0.0.1 -p 8080
+
+$ rake routes
+     Prefix Verb URI Pattern            Controller#Action
+pages_home GET  /pages/home(.:format)  pages#home
+pages_about GET  /pages/about(.:format) pages#about
