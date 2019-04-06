@@ -30,3 +30,5 @@ $ rake routes
      Prefix Verb URI Pattern            Controller#Action
 pages_home GET  /pages/home(.:format)  pages#home
 pages_about GET  /pages/about(.:format) pages#about
+
+$ bundle install --without production
