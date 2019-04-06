@@ -32,3 +32,7 @@ pages_home GET  /pages/home(.:format)  pages#home
 pages_about GET  /pages/about(.:format) pages#about
 
 $ bundle install --without production
+$ rails generate migration create_articles
+$ rake db:migrate
+$ rake db:migrate
+$ rails generate migration add_description_to_articles
