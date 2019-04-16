@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>AlphaBlog</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <h1>HOME</h1>
-    <br />
-    <%= link_to "About", about_path %>
-    <br />
-    <%= link_to image_tag('cake.jpg'), about_path %>
-    <br />
-    <%= link_to "Alpha Blog", articles_path %>
-  </body>
-</html>
+<div class="center jumbotron">
+  <h1>ALPHA BLOG</h1>
+  <%= link_to "sign up now", "#", class: "btn btn-primary btn-lg" %>
+</div>
