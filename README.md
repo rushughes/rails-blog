@@ -44,7 +44,7 @@ Loading development environment (Rails 5.1.6.1)
   Article Load (2.0ms)  SELECT  "articles".* FROM "articles" LIMIT ?  [["LIMIT", 11]]
  => #<ActiveRecord::Relation []>
 2.5.1 :002 > Article
- => Article(id: integer, title: string, description: text, created_at: datetime, updated_at: datetime) 
+ => Article(id: integer, title: string, description: text, created_at: datetime, updated_at: datetime)
 2.5.1 :003 > article = Article.new
  => #<Article id: nil, title: nil, description: nil, created_at: nil, updated_at: nil>
 2.5.1 :004 > article.title = "This is my first article"
@@ -87,3 +87,6 @@ article.saved_change_to_created_at?   article.saved_change_to_title?
   Article Load (0.2ms)  SELECT  "articles".* FROM "articles" LIMIT ?  [["LIMIT", 11]]
  => #<ActiveRecord::Relation [#<Article id: 1, title: "This is my first article", description: "this is the description", created_at: "2019-04-06 14:11:56", updated_at: "2019-04-06 14:11:56">, #<Article id: 2, title: "2nd article", description: "2nd description", created_at: "2019-04-06 14:13:14", updated_at: "2019-04-06 14:13:14">, #<Article id: 3, title: "This is my third article", description: "My third article's description", created_at: "2019-04-06 14:14:07", updated_at: "2019-04-06 14:14:07">]>
 2.5.1 :014 > exit
+
+
+$ heroku run rake db:migrate --app udemy-alpha-blog-rus
