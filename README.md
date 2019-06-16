@@ -90,3 +90,4 @@ article.saved_change_to_created_at?   article.saved_change_to_title?
 
 
 $ heroku run rake db:migrate --app udemy-alpha-blog-rus
+$ bundle install --without production
